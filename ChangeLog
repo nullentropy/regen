@@ -1,0 +1,70 @@
+0.0.6
+
+- fixed crash when a server kicked a user
+
+
+0.0.5
+
+- users get removed from channels when they part, get kicked, or quit
+- nicklist displays op/voice status
+- nicklist is sorted and updates on events
+- titlebar updates on events
+- fixed bugs with channel topics
+- fixed crash when a server changed a channel mode
+- fixed bug with window list when a window was destroyed
+- /mop, /mdeop, /mvoice and /mdevoice work now
+- ctrl+1-9 for first 9 windows
+- ctrl+tab cycles through windows
+
+
+0.0.4
+
+- added commands: /op, /deop, /voice, /devoice
+- switchbar icons can be different based on window type
+- started work on config
+- added timestamping
+- ctcp replies get displayed now
+- can actually close windows now
+- can part channels too.. amazing, i know
+- some information gets displayed in the titlebar
+- channels have a nicklist
+
+
+0.0.3
+
+- added commands: /sv, /ctcp, /query, /oper
+- switchbar works properly now
+- abandoned switchbar text highlighting (didn't work at all)
+- few internal changes to properly parse irc input
+- re-structured the source directory
+- separated network handling of events from displaying of said events
+- severely cleaned up the command handling code
+- you can now hit up or down to scroll through previous lines
+
+
+0.0.2
+
+- abandoned multi-server capability for now
+- added commands: /nick, /clear, /echo, /quote
+- moved client output functions to gui_window
+- renamed server output functions to server_send() and server_sendf()
+- removed text.c and text.h
+- lots of other code cleanup
+
+
+0.0.1
+
+- added command handling
+- added server input handling
+- added color support for client output
+- added about dialog
+- added basic Makefile
+- added tabbed windows
+- added irc protocol output
+- current list of commands: /server, /disconnect, /quit, /exit, /join, /part,
+/msg, /whois
+
+
+0.0.0
+
+- birth

@@ -1,0 +1,16 @@
+void in_server_notice(server *s, char *msg);
+void in_notice(server *s, user *from, char *target, char *message);
+void in_server_ping(server *s, char *stuff);
+void in_nick(server *s, user *u, char *newnick);
+void in_privmsg(server *s, user *from, char *msg);
+void in_ctcp(server *s, user *u, char *target, char *msg);
+void in_ctcp_reply(server *s, user *u, char *msg);
+void in_join(server *s, user *u, channel *c);
+void in_part(server *s, channel_user *u, channel *c, char *msg);
+void in_kick(server *s, channel_user *from, channel *c, channel_user *target, char *msg);
+void in_mode(server *s, channel_user *u, channel *c, char *mode, char *target);
+void in_mode_server(server *s, char *server_name, channel *c, char *mode, char *target);
+void _in_mode(server *s, char *from, channel *c, char *mode, char *target);
+void in_mode_me(server *s, char *modes);
+void in_server_numeric(server *s, int numeric, char *word[], char *line);
+void _in_kick(server *s, char *from, channel *c, channel_user *target, char *msg);
